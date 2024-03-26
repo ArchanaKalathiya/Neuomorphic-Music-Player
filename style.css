@@ -1,0 +1,61 @@
+body{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0e5ec;
+}
+.music-player{
+    background: #e0e5ec;
+    border-radius: 20px;
+    box-shadow: 20px 20px 60px #bebebe,
+            -20px -20px 60px #ffffff;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; 
+}
+.cover img{
+    width: 150px;
+    height: 150px;
+    border-radius: 90px;
+    box-shadow: 5px 5px 10px #bebebe,
+                -5px -5px 10px #ffffff;
+}
+.song-name{
+    text-align: center;
+    margin-top: 10px;
+}
+@keyframes rotateImage {
+    from {
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.rotating{
+    animation: rotateImage 3s linear infinite;
+}
+.controls{
+    display: flex;
+    gap:20px;
+}
+.control-button img{
+    width:35px;
+    height: 35px;
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 100px;
+    background: #e0e5ec;
+    box-shadow: 20px 5px 8px #bebebe,
+                -5px -5px 8px #ffffff;
+}
+.control-button:active{
+    box-shadow: inset 10px 5px 5px #bebebe,
+                inset -10px 5px 5px #ffffff;
+    border-radius: 20px;  
+ 
+}
